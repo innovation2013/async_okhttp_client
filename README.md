@@ -1,7 +1,7 @@
 # async_okhttp_client
 An Android async httpclient  based on okhttp
 
-#Support
+##Support
 * HTTP Get Request
 * HTTP Post Request
 * HTTP Put Request
@@ -15,8 +15,8 @@ An Android async httpclient  based on okhttp
 * Cancel Request
 * Cookie Persistence
 
-#Simple Use
-*Get a String from server
+##Simple Use
+* Get a String from server
 
   	```java
   		AsyncOkhttpClient.getInstance(context).getAsync(url, new TextResponseHandler() {
@@ -34,7 +34,7 @@ An Android async httpclient  based on okhttp
 			}
 		});
 	```
-*Get a Gson Object from server
+* Get a Gson Object from server
 
   	```java
   		AsyncOkhttpClient.getInstance(context).getAsync(url,new JsonResponseHandler<UserModel>() {
@@ -52,7 +52,7 @@ An Android async httpclient  based on okhttp
 			}
 		});
   	```
-*Post params request
+* Post params request
 
   	```java
 		RequestParams requestParams= new RequestParams();
@@ -73,7 +73,7 @@ An Android async httpclient  based on okhttp
 			}
 		});
 	```
-*Post file request,you can also use the handler implements DownloadProgressListener to listen progress
+* Post file request,you can also use the handler implements DownloadProgressListener to listen progress
 
   	```java
 		RequestParams requestParams= new RequestParams();
@@ -93,7 +93,7 @@ An Android async httpclient  based on okhttp
 			}
 		});
 	```
-*Download an file from the server
+* Download an file from the server
 
 	```java
 			AsyncOkhttpClient.getInstance(this).getAsync("http://www.google.com", new FileResponseHandler(file) {
