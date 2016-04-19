@@ -1,2 +1,2 @@
 # async_okhttp_client
-An async httpclient on Android based on okhttp
+An Android async httpclient  based on okhttp
