@@ -70,7 +70,7 @@ An Android async httpclient  based on okhttp
 			}
 		});
 	```
-	*Post file request,you can also use the handler implements DownloadProgressListener to listen progress
+*Post file request,you can also use the handler implements DownloadProgressListener to listen progress
   ```java
 		RequestParams requestParams= new RequestParams();
 		requestParams.add("filename", file);
@@ -89,7 +89,7 @@ An Android async httpclient  based on okhttp
 			}
 		});
 	```
-	*Download an file from the server
+*Download an file from the server
 	  ```java
 			AsyncOkhttpClient.getInstance(this).getAsync("http://www.google.com", new FileResponseHandler(file) {
 			
