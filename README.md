@@ -17,6 +17,7 @@ An Android async httpclient  based on okhttp
 
 #Simple Use
 *Get a String from server
+
   	```java
   		AsyncOkhttpClient.getInstance(context).getAsync(url, new TextResponseHandler() {
 			
@@ -34,6 +35,7 @@ An Android async httpclient  based on okhttp
 		});
 	```
 *Get a Gson Object from server
+
   	```java
   		AsyncOkhttpClient.getInstance(context).getAsync(url,new JsonResponseHandler<UserModel>() {
 
@@ -51,6 +53,7 @@ An Android async httpclient  based on okhttp
 		});
   	```
 *Post params request
+
   	```java
 		RequestParams requestParams= new RequestParams();
 		requestParams.add("name", value);
@@ -71,6 +74,7 @@ An Android async httpclient  based on okhttp
 		});
 	```
 *Post file request,you can also use the handler implements DownloadProgressListener to listen progress
+
   	```java
 		RequestParams requestParams= new RequestParams();
 		requestParams.add("filename", file);
@@ -90,6 +94,7 @@ An Android async httpclient  based on okhttp
 		});
 	```
 *Download an file from the server
+
 	```java
 			AsyncOkhttpClient.getInstance(this).getAsync("http://www.google.com", new FileResponseHandler(file) {
 			
